@@ -56,7 +56,7 @@ class Server:
         based on starting and end index
         determined by the page and page_size
         """
-        assert (page, page_size) == int
+        assert type(page) == int and type(page_size) == int
         assert (page, page_size) > (0, 0)
 
         start_index, end_index = index_range(page, page_size)
