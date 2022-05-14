@@ -13,6 +13,8 @@ app.url_map.strict_slashes = False
 
 
 app.route('/')
+
+
 def index_page() -> str:
     """
     Returns root index page

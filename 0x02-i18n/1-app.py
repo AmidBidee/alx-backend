@@ -9,7 +9,6 @@ from flask import (
 )
 
 
-
 class Config:
     """
     Flask Babel Language Config Class defination
@@ -23,7 +22,6 @@ app = Flask(__name__)
 app.config.from_object(Config)
 app.url_map.strict_slashes = False
 babel = Babel(app)
-
 
 
 @app.route('/')
