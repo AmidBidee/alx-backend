@@ -10,7 +10,6 @@ from flask import (
 )
 
 
-
 class Config:
     """
     Flask Babel Language Config Class defination
@@ -24,7 +23,6 @@ app = Flask(__name__)
 app.config.from_object(Config)
 app.url_map.strict_slashes = False
 babel = Babel(app)
-
 
 
 @babel.localselector
@@ -41,7 +39,6 @@ def index_page() -> str:
     return index page
     """
     return render_template('2-index.html')
-
 
 
 if __name__ == '__main__':
